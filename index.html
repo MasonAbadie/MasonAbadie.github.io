@@ -75,9 +75,6 @@ background: rgba(2, 79, 129, 0.534);
         h2, h3 {
             margin: 10px;
         }
-        h3 {
-            padding:20px
-        }
         .divmain2 {
             padding-left: 100px;
             
@@ -85,15 +82,16 @@ background: rgba(2, 79, 129, 0.534);
         img {
             width:100px;
             height:100px;
-            margin-right:100px;
+            position: relative;
+            top:50px;
+
         }
      </style>
    </head>
    
    <body>
      <!-- All content goes here -->   
-     <div class="content" id="all-contents"> 
-        
+     <div  id="all-contents"> 
         <nav>
 <h1>Masons Website</h1>
 <ul id="nav-ul">
@@ -107,28 +105,24 @@ background: rgba(2, 79, 129, 0.534);
         </nav>
 
         <main>
-          <!-- Sidebar section -->
+          
+          <div class=sidebar>  
+<!-- Sidebar section -->
           <img src="https://cdn.shopify.com/s/files/1/1061/1924/products/Emoji_Icon_-_Sunglasses_cool_emoji_large.png?v=1571606093">
-          <div>  
-<h2>Intrests section</h2>
-<p>Student at DTSMA</p>
            </div>
    <!-- Content Section-->
-   <div>
-    <h2></h2>
-    <p></p>
-    <!-- Interests section -->
-    <div>
+   <div class="content">
+    <h2>Mason Abadie</h2>
+    <p>Student at DTSMA</p>
+        <div id="intrests">
+        <!-- Interests section -->
         <h3>Interests</h3>
         <ul>
             <li>Megaman</li>
             <li>Drinking water</li>
             <li>Sleeping</li>
-        </ul>
-    </div>
+    </ul>
 </div>
         </main>
-        
-    </div>
    </body>
 </html>
