@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>Portfolio</title>
+        <title>cool portfolio</title>
         <style type="text/css">
             body {               
   background-color: rgba(35, 116, 223, 0.74);
@@ -26,6 +26,7 @@
                 display: flex;
                 padding: 10px;
                 border-radius: 30px;
+                box-shadow: 8px 8px rgba(0, 0, 0, 0.562);
             }
             nav:hover{
                 background:rgba(14, 83, 80, 0.603);
@@ -47,6 +48,10 @@
             .nav-a {
                 text-decoration: none;
                 color: #fff;
+                transition: 2s;
+            }
+            .nav-a:hover {
+                font-size: 30px;
             }
    
             /* main container area beneath menu */
@@ -58,6 +63,7 @@
                 position:relative;
                 left:540px;
                 top:50px;
+                box-shadow: 8px 8px rgba(0, 0, 0, 0.562);
             }
             main:hover {
                 background: rgba(196, 119, 19, 0.644);
@@ -80,10 +86,13 @@
              padding: 10px;
              border-radius: 10px;
              margin-bottom: 10px;
+             transition: font-size 2s;
+
          }
 
          #portfolio li:hover {
-             background: rgba(255, 145, 0, 0.644);;
+             background: rgba(255, 145, 0, 0.644);
+             font-size: 20px;
          }
 
          #portfolio a {
@@ -112,7 +121,7 @@
 </div>
     <main>
 <div class="content">
-    <h1>Portfolio</h1>
+    <h1>Portfolio (Portfolio)</h1>
             <u1 id="portfolio">
     <li><a href="projects/platformer/">Platformer : A cannon - dodging, collectible - grabbing adventure game for Halleb0t</a></li>
     <li><a href="projects/bouncing-box/">Bouncing Box : A project that gives you a taste of game development on the web </a></li>
