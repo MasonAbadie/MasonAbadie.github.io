@@ -9,6 +9,10 @@
             color: rgb(45, 45, 45);
             padding: 10px;
             font-family: arial;
+            animation-name:testanimation;
+            animation-duration: 15s;
+            /*this is how long the animation lasts*/
+            animation-iteration-count: infinite;
         }
         #all-contents {
           max-width: 800px;
@@ -17,16 +21,17 @@
      
         /* navigation menu */
         nav {
-            background: rgba(2, 116, 192, 0.534);
+            background-image: linear-gradient(steelblue,darkorange);
            margin: 0 auto;
            margin-bottom: 20px;
             display: flex;
             padding: 10px;
             border-radius: 100px 100px / 120px;
             box-shadow: 8px 8px rgba(0, 0, 0, 0.562);
+            transition:2s;
         }
         nav:hover {
-background: rgba(2, 79, 129, 0.534);
+            background-image:linear-gradient(rgb(55, 101, 139),rgb(216, 119, 0));
         }
         h1 {
             display: flex;
@@ -49,7 +54,7 @@ background: rgba(2, 79, 129, 0.534);
         }
 
         a:hover {
-            font-size: 30px;
+            font-size: 19px;
         }
      
         /* main container area beneath menu */
@@ -58,10 +63,6 @@ background: rgba(2, 79, 129, 0.534);
             display: flex;
             border-radius: 30px;
             box-shadow: 8px 8px rgba(0, 0, 0, 0.562);
-            animation-name:testanimation;
-            animation-duration: 15s;
-            /*this is how long the animation lasts*/
-            animation-iteration-count: infinite;
         }
 
 @keyframes testanimation {
