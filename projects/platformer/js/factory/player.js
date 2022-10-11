@@ -5,8 +5,8 @@
     let 
         opspark = window.opspark,
         animations = {},
-        spawnX = 30,
-        spawnY = 600;
+        spawnX = 200,
+        spawnY = 450;
         
     opspark.createPlayer = function (game) {
         let 
@@ -123,7 +123,7 @@
         function createFlyingJumpState(name) {
             let 
                 xOffset = 17,
-                yOffset = 9,
+                yOffset = 999,
                 state = createState(name);
                 state.fire = state.duck = state.idle = state.walk = state.run = 
                 state.stop = state.duck = state.jump = state.flyingJump = doNothing;
@@ -137,7 +137,7 @@
                 asset.y += yOffset;
             };
             state.exit = function() {
-                asset.body.bounce.y = 0.4;
+                asset.body.bounce.y = 1;
                 asset.x -= xOffset * _direction;
                 asset.y -= yOffset;
             };
@@ -216,7 +216,7 @@
             let 
                 flyingJump = animations.flyingJump,
                 // todo : fix magic number using mid, you'll have to find it by getting the length of the range of frames //
-                mid = Math.floor(flyingJump.frameTotal / 2),
+                mid = Math.floor(flyingJump.frameTotal / 1),
                 origYOffset = asset.body.offset.y;
                 console.log(`total frames: ${flyingJump.frameTotal}`);
                 console.log(`origYOffset : ${origYOffset}`);
