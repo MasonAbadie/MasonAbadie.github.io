@@ -31,10 +31,20 @@ createCannon("top", 350);
 createCannon("top", 650);
 createCannon("top", 750);
 createCannon("top", 825);
-createCannon("left", 50)
-createCannon("left", 75)
-createCannon("left", 25)
-createCannon("bottom", 500)
+createCannon("left", 50, 1000);
+createCannon("left", 150, 1000);
+createCannon("left", 250, 1000);
+createCannon("left", 350, 1000);
+createCannon("bottom", 500);
+createCannon("bottom", 400);
+createCannon("bottom", 600);
+createCannon("bottom", 700);
+createCannon("bottom", 800);
+createCannon("bottom", 300);
+createCannon("bottom", 100);
+createCannon("right", 275, 1000);
+createCannon("right", 175, 1000);
+createCannon("right", 75, 1000);
     // example:
     createCannon("top", 275);
 
