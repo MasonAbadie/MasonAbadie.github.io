@@ -123,7 +123,7 @@ Once that is done, you should see the heads-up display!
 > ```js
 > hud.updateScore(10);
 >
-> hud.updateOf(1000);
+> hud.updateScore(10);
 >
 > hud.setIntegrity(25);
 >
@@ -193,7 +193,7 @@ So, in order to draw something you will create a _shape variable_ that will hold
 | <img src="img/readme/circle.png"> | `var shape = draw.circle(radius, color, strokeColor, strokeWidth);`        |
 | <img src="img/readme/moon.png">   | `var shape = draw.bitmap('img/moon.png');`                                 |
 
-In order to make your shape show on sreen you will need to add it to the `background` by calling
+In order to make your shape show on screen you will need to add it to the `background` by calling
 
 ```js
 background.addChild(shape);
